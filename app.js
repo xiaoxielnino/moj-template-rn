@@ -7,20 +7,21 @@ import { createStackNavigator } from 'react-navigation-stack';
 
 import { Provider } from 'react-redux';
 import store from './src/redux/store';
-import { RouteConfig, InitConfig} from './src/routes';
+import { RouteConfig, InitConfig } from './src/routes';
 
 
 const AppNavigator = createStackNavigator(RouteConfig, InitConfig());
 const AppContainer = createAppContainer(AppNavigator);
 // export default AppContainer;
 
+// eslint-disable-next-line react/prefer-stateless-function
 class App extends React.PureComponent {
     render() {
         return (
             <Provider store={store}>
                 <AppContainer />
             </Provider>
-        )
+        );
     }
 }
 

@@ -14,11 +14,10 @@ export const reducers = {
 
 // Action Creators
 export const actions = {
-    say: (words) => ({
+    say: words => ({
         type: SAY,
         payload: new Promise((resolve) => {
             setTimeout(() => {
-                console.log('timeout')
                 resolve({
                     data: words
                 });

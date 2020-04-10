@@ -1,26 +1,26 @@
 import Home from './container/home';
-import Detail from "./container/detail";
+import Detail from './container/detail';
 
 // 页面跳转使用 this.props.navigation.navigate(`${name}`)
 const RouteConfig = {
     home: {
         screen: Home,
-        path: "home"
+        path: 'home'
     },
     detail: {
         screen: Detail,
         path: 'detail'
     },
-}
+};
 
-function InitConfig(route = "home") {
+function InitConfig(route = 'home') {
     return {
         initialRouteName: route,
-    }
+    };
 }
 
 
 export {
     RouteConfig,
     InitConfig
-}
+};

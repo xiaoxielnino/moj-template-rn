@@ -22,7 +22,7 @@ module.exports = (env, argv) => {
     output: {
       path: DIST_PATH,
       filename: PRODUCTION ? '[name].[hash:8].js' : '[name].js',
-      publicPath: PRODUCTION ? (appId ? `${cdnPath}/static_public/${appId}/` : '/') : '/'
+      publicPath: PRODUCTION ? (appId ? `${cdnPath}/static_public/${appId}/` : '/st/moj-rn') : '/'
     },
     resolve: {
       extensions: ['.jsx', '.js', '.css', '.tsx', 'ts'],

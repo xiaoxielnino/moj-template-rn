@@ -30,15 +30,13 @@ export const connectByModule = (moduleName, mapStateToProps, mapDispatchToProps)
             actions[key] = bindActionCreators(item, dispatch);
             return false;
         });
-        
+
         return {
             actions,
             ...mapDispatchToProps
         };
     };
-    return target => {
-        return connect(mapStateToProps, mapDispatchToPropsWrap)(target);
-    };
+    return target => connect(mapStateToProps, mapDispatchToPropsWrap)(target);
 };
 
 export default createStore(combineReducers({

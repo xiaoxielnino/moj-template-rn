@@ -15,6 +15,7 @@ const AppContainer = createBrowserApp(AppNavigator);
 
 // export default AppContainer;
 
+// eslint-disable-next-line react/prefer-stateless-function
 class App extends React.PureComponent {
     render() {
         return (
@@ -24,7 +25,7 @@ class App extends React.PureComponent {
                     <Stack.Navigator name="home" component={Home} />
                 </NavigationContainer> */}
             </Provider>
-        )
+        );
     }
 }
 
