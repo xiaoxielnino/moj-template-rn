@@ -1,0 +1,11 @@
+{
+	"app" : {
+		"buildPath" : "./public"
+	},
+	"pages" : [{
+		"name" : "index",
+		"title" : "{{projectName}}",
+		"html" : "./src/view/index.html",
+		"js" : "./index.web.js"
+	}]
+}
