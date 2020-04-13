@@ -22,10 +22,7 @@ class App extends React.PureComponent {
                         <Stack.Navigator>
                             <Stack.Screen
                                 name="home"
-                                component={Home}
-                                options={{
-                                    title: 'this is home'
-                                }} />
+                                component={Home} />
                             <Stack.Screen name="detail" component={Detail} />
                         </Stack.Navigator>
                     </NavigationContainer>
