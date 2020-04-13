@@ -1,11 +1,21 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import {
-    View,
     Text,
-    Button
+    Button,
+    StyleSheet
 } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
+
 import { connectByModule } from '../../redux/store';
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: 'grey',
+        position: 'relative',
+    },
+});
 
 @connectByModule('home', state => ({
     saidWords: state.home.saidWords
@@ -17,8 +27,10 @@ class Home extends React.PureComponent {
             saidWords
         } = this.props;
         return (
-            <View>
-                <Text>home</Text>
+            <SafeAreaView style={
+                styles.container
+            }>
+                <Text>home2</Text>
                 <Button
                     onPress={() => this.props.navigation.navigate('detail')}
                     title="go to detail" />
@@ -26,10 +38,9 @@ class Home extends React.PureComponent {
                     onPress={() => this.props.actions.say('hello')}
                     title="dispatch action" />
                 <Text>{saidWords}</Text>
-            </View>
+            </SafeAreaView>
         );
     }
 }
-console.log(Home, 111);
 
 export default Home;

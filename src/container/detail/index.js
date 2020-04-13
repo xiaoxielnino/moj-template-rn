@@ -3,14 +3,17 @@ import {
     View,
     Text
 } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 // eslint-disable-next-line react/prefer-stateless-function
 class Detail extends React.PureComponent {
     render() {
         return (
-            <View>
-                <Text>detail</Text>
-            </View>
+            <SafeAreaView>
+                <View>
+                    <Text>detail</Text>
+                </View>
+            </SafeAreaView>
         );
     }
 }
