@@ -6,11 +6,11 @@
     "clean:cache": "rm -fr $TMPDIR/metro*",
 
     "android": "npm run clean:cache && react-native run-android",
-    "build:android:test": "node ./build --android:test",
-    "build:android": "node ./build --android",
+    "build:android:test": "node ./script/build --android:test",
+    "build:android": "node ./script/build --android",
     "ios": "npm run clean:cache && react-native run-ios",
-    "build:ios:test": "node ./build --ios:test",
-    "build:ios": "node ./build --ios",
+    "build:ios:test": "node ./script/build --ios:test",
+    "build:ios": "node ./script/build --ios",
 
     "start": "react-native start",
 
