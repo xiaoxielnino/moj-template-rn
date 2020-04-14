@@ -3,6 +3,7 @@ import React from 'react';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import { enableScreens } from 'react-native-screens';
 
 
 import { Provider } from 'react-redux';
@@ -10,6 +11,7 @@ import store from './src/redux/store';
 import Home from './src/container/home';
 import Detail from './src/container/detail';
 
+enableScreens();
 const Stack = createStackNavigator();
 
 // eslint-disable-next-line react/prefer-stateless-function
