@@ -40,6 +40,7 @@
     "shelljs": "^0.8.3"
   },
   "dependencies": {
+    "@music/mobile-orpheuslink": "^0.1.11",
     "@music/rn-util": "^0.0.12",
     "@react-native-community/masked-view": "^0.1.7",
     "@react-navigation/native": "^5.1.5",
