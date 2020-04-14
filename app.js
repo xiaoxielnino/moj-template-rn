@@ -7,9 +7,9 @@ import { enableScreens } from 'react-native-screens';
 
 
 import { Provider } from 'react-redux';
-import store from './src/redux/store';
-import Home from './src/container/home';
-import Detail from './src/container/detail';
+import store from '@redux/store';
+import Home from '@container/home';
+import Detail from '@container/detail';
 
 enableScreens();
 const Stack = createStackNavigator();

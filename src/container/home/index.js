@@ -7,7 +7,7 @@ import {
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { connectByModule } from '../../redux/store';
+import { connectByModule } from '@redux/store';
 
 const styles = StyleSheet.create({
     container: {
