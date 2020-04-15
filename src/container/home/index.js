@@ -6,7 +6,7 @@ import {
     StyleSheet
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-
+import { PropTypes } from 'prop-types';
 import { connectByModule } from '@redux/store';
 
 const styles = StyleSheet.create({
@@ -23,7 +23,6 @@ const styles = StyleSheet.create({
 class Home extends React.PureComponent {
     render() {
         const {
-            // eslint-disable-next-line react/prop-types
             saidWords
         } = this.props;
         return (
@@ -42,5 +41,11 @@ class Home extends React.PureComponent {
         );
     }
 }
+Home.propTypes = {
+    saidWords: PropTypes.string
+};
+Home.defaultProps = {
+    saidWords: ''
+};
 
 export default Home;
