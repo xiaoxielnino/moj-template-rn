@@ -1,6 +1,14 @@
 {
-  "compilerOptions": {
-      "experimentalDecorators": true,
-      "target": "es2017"
-  }
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "target": "es2017",
+        "baseUrl": ".",
+        "paths": {
+            "@component/*": ["./src/component/*"],
+            "@util/*": ["./src/util/*"],
+            "@service/*": ["./src/service/*"],
+            "@redux/*": ["./src/redux/*"],
+            "@container/*": ["./src/container/*"]
+        }
+    }
 }
